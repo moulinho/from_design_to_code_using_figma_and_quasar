@@ -32,8 +32,7 @@
               :ratio="1"
               spinner-color="primary"
               spinner-size="82px"
-              width="25vw"
-              height="40vh"
+              fit="contain"
             />
           </div>
           <div
@@ -62,7 +61,7 @@
           </div>
         </div>
 
-        <div class="row justify-between q-my-xl q-py-xl">
+        <div class="row justify-between q-my-xl">
           <div
             class="col-md-6 col-sm-12 col-xs-12 column justify-center q-gutter-md text-body1"
           >
@@ -93,12 +92,11 @@
               :ratio="1"
               spinner-color="primary"
               spinner-size="82px"
-              width="25vw"
-              height="40vh"
+              fit="contain"
             />
           </div>
         </div>
-        <div class="row justify-between q-my-xl q-py-xl">
+        <div class="row justify-between q-my-xl">
           <div
             class="col-md-5 col-sm-12 col-xs-12 q-gutter-md text-body1 q-my-md"
           >
