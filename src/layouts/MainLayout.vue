@@ -71,6 +71,7 @@
       show-if-above
       bordered
       class="text-body1 q-pa-md"
+      v-if="$q.screen.lt.sm"
     >
       <q-item class="items-center justify-between">
         <q-item-section top avatar>
