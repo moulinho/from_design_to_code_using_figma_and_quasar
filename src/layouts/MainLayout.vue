@@ -117,7 +117,7 @@
       <div class="row justify-center">
         <div class="col-9 row justify-between q-gutter-lg">
           <q-list class="col-md-2 col-sm-2 col-xs-12">
-            <q-item clickable v-ripple>
+            <q-item clickable v-ripple to="/">
               <q-item-section>
                 <q-img
                   src="~assets/Logo1.png"
@@ -140,9 +140,7 @@
               <q-item-section top avatar>
                 <q-avatar color="primary" text-color="white" icon="facebook" />
               </q-item-section>
-              <q-item-section top avatar>
-                <q-avatar color="primary" text-color="white" icon="linkedin" />
-              </q-item-section>
+
               <q-item-section top avatar>
                 <q-avatar color="primary" text-color="white" icon="X" />
               </q-item-section>
@@ -155,13 +153,13 @@
                 >Entreprise</q-item-section
               >
             </q-item>
-            <q-item>
+            <q-item to="/produits">
               <q-item-section class="">Produits</q-item-section>
             </q-item>
-            <q-item>
+            <q-item to="/apps">
               <q-item-section class="">Apps</q-item-section>
             </q-item>
-            <q-item>
+            <q-item to="/blogs">
               <q-item-section class="">Blogs</q-item-section>
             </q-item>
           </q-list>
