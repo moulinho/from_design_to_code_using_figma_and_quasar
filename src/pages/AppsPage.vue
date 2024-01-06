@@ -25,14 +25,15 @@
             <q-btn color="primary" size="md" label="Télécharger" no-caps />
           </div>
         </div>
-        <div class="row justify-between q-my-xl">
+        <div class="row justify-between q-my-md">
           <div class="col-md-5 col-sm-12 col-xs-12">
             <q-img
               src="~assets/Pic23.png"
               :ratio="1"
               spinner-color="primary"
               spinner-size="82px"
-              fit="contain"
+              width="25vw"
+              height="40vh"
             />
           </div>
           <div
@@ -52,7 +53,7 @@
             </div>
           </div>
         </div>
-        <div class="row justify-between q-my-xl">
+        <div class="row justify-between q-my-md">
           <div
             class="col-md-6 col-sm-12 col-xs-12 column justify-center q-gutter-md text-body1"
           >
@@ -81,7 +82,8 @@
               :ratio="1"
               spinner-color="primary"
               spinner-size="82px"
-              fit="contain"
+              width="25vw"
+              height="40vh"
             />
           </div>
         </div>
@@ -93,7 +95,8 @@
               :ratio="1"
               spinner-color="primary"
               spinner-size="82px"
-              fit="contain"
+              width="25vw"
+              height="40vh"
             />
           </div>
           <div

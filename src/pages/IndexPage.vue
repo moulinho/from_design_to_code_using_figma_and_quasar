@@ -25,9 +25,7 @@
               expérience client.
             </div>
 
-            <div
-              :class="$q.screen.gt.xs ? 'row q-gutter-x-md' : 'q-gutter-x-md'"
-            >
+            <div class="row q-gutter-md justify-center">
               <q-btn
                 color="black"
                 size="md"
@@ -36,7 +34,6 @@
                 label="Regarder"
                 no-caps
               />
-
               <q-btn color="primary" size="md" label="Télécharger" no-caps />
             </div>
           </div>
@@ -103,6 +100,8 @@
 
           <div class="row justify-evenly q-gutter-lg q-my-lg">
             <q-card
+              flat
+              bordered
               class="my-card col-md-3 text-center q-py-md"
               v-for="n in 5"
               :key="n"

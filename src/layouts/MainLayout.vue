@@ -73,7 +73,7 @@
       class="text-body1 q-pa-md"
       v-if="$q.screen.lt.sm"
     >
-      <q-item class="items-center justify-between">
+      <q-item class="items-center justify-between" to="/">
         <q-item-section top avatar>
           <q-img
             src="~assets/Logo1.png"
@@ -193,13 +193,24 @@
               </q-item-section>
             </q-item>
             <q-item>
-              <q-item-section class="">
-                <q-input
-                  v-model="email"
-                  outlined
-                  type="text"
-                  placeholder="Votre adresse e-mail"
-                />
+              <q-item-section>
+                <q-item-label>
+                  <q-input
+                    v-model="email"
+                    outlined
+                    type="text"
+                    placeholder="Votre adresse e-mail"
+                  />
+                </q-item-label>
+                <q-item-label>
+                  <q-btn
+                    color="primary"
+                    icon="send"
+                    class="col-5"
+                    outline
+                    label="envoyer"
+                  />
+                </q-item-label>
               </q-item-section>
             </q-item>
             <q-item>
@@ -216,6 +227,13 @@
     <q-page-container>
       <router-view />
     </q-page-container>
+    <q-page-scroller
+      position="bottom-right"
+      :scroll-offset="150"
+      :offset="[18, 18]"
+    >
+      <q-btn fab icon="keyboard_arrow_up" color="black" />
+    </q-page-scroller>
   </q-layout>
 </template>
 

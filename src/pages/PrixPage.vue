@@ -19,7 +19,11 @@
         </div>
 
         <div class="row justify-between q-py-lg q-gutter-lg">
-          <q-card class="my-card q-pa-md flat col-md-5 col-sm-5 col-xs-12">
+          <q-card
+            flat
+            bordered
+            class="my-card q-pa-md col-md-5 col-sm-5 col-xs-12"
+          >
             <q-card-section>
               <q-chip color="" text-color=""> PERSONNEL </q-chip>
             </q-card-section>
@@ -58,7 +62,11 @@
             </q-card-section>
           </q-card>
 
-          <q-card class="my-card q-pa-md col-md-5 col-sm-5 col-xs-12">
+          <q-card
+            flat
+            bordered
+            class="my-card q-pa-md col-md-5 col-sm-5 col-xs-12"
+          >
             <q-card-section>
               <q-chip color="" text-color=""> EQUIPES </q-chip>
             </q-card-section>
