@@ -1,6 +1,6 @@
 <template>
   <q-layout view="hHh lpR fff">
-    <q-header elevated class="bg-white text-black q-pa-md">
+    <q-header elevated class="bg-white text-black q-pa-sm">
       <q-toolbar>
         <q-btn
           flat
@@ -26,7 +26,7 @@
               height="32px"
             />
           </q-btn>
-          <div class="col row q-mx-xl">
+          <div class="col row justify-center">
             <q-tabs v-model="tab" no-caps active-color="primary">
               <q-route-tab
                 name="Produits"
@@ -43,16 +43,16 @@
 
         <div
           v-if="$q.screen.gt.xs"
-          class="col-md-3 col-sm-4 col-xs-12 row q-gutter-lg justify-end"
+          class="col-md-3 col-sm-4 col-xs-12 row q-gutter-xs justify-end"
         >
           <q-btn
             color="black"
-            size="md"
+            size="sm"
             outline
             icon="play_circle_filled"
             label="Regarder"
             no-caps
-            class="col-md-5 col-sm-7 col-xs-12"
+            class="col"
           />
 
           <q-btn
@@ -60,7 +60,7 @@
             size="md"
             label="Télécharger"
             no-caps
-            class="col-md-5 col-sm-7 col-xs-12"
+            class="col"
           />
         </div>
       </q-toolbar>
@@ -237,55 +237,9 @@
 
 <script setup lang="ts">
 import { ref } from 'vue';
-import EssentialLink, {
-  EssentialLinkProps,
-} from 'components/EssentialLink.vue';
+
 let tab = ref('Produits');
 let email = ref();
-const essentialLinks: EssentialLinkProps[] = [
-  {
-    title: 'Docs',
-    caption: 'quasar.dev',
-    icon: 'school',
-    link: 'https://quasar.dev',
-  },
-  {
-    title: 'Github',
-    caption: 'github.com/quasarframework',
-    icon: 'code',
-    link: 'https://github.com/quasarframework',
-  },
-  {
-    title: 'Discord Chat Channel',
-    caption: 'chat.quasar.dev',
-    icon: 'chat',
-    link: 'https://chat.quasar.dev',
-  },
-  {
-    title: 'Forum',
-    caption: 'forum.quasar.dev',
-    icon: 'record_voice_over',
-    link: 'https://forum.quasar.dev',
-  },
-  {
-    title: 'Twitter',
-    caption: '@quasarframework',
-    icon: 'rss_feed',
-    link: 'https://twitter.quasar.dev',
-  },
-  {
-    title: 'Facebook',
-    caption: '@QuasarFramework',
-    icon: 'public',
-    link: 'https://facebook.quasar.dev',
-  },
-  {
-    title: 'Quasar Awesome',
-    caption: 'Community Quasar projects',
-    icon: 'favorite',
-    link: 'https://awesome.quasar.dev',
-  },
-];
 
 const leftDrawerOpen = ref(false);
 

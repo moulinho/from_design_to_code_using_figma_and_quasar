@@ -1,12 +1,12 @@
 <template>
-  <q-page padding class="q-mx-xl">
+  <q-page padding class="q-mx-md">
     <div class="row justify-center">
       <div class="col-9">
         <div class="row justify-between">
           <div
             :class="
               $q.screen.gt.xs
-                ? 'col-md-8  column justify-center q-gutter-y-md'
+                ? 'col-md-8 col-sm-7  column justify-center q-gutter-y-md'
                 : ' text-center q-gutter-y-md'
             "
           >
@@ -37,13 +37,12 @@
               <q-btn color="primary" size="md" label="Télécharger" no-caps />
             </div>
           </div>
-          <div v-if="$q.screen.gt.xs" class="col">
+          <div v-if="$q.screen.gt.xs" class="col-md-3 col-sm-5">
             <q-img
               src="~assets/unsplash_WVaR2DSNVQk.png"
               spinner-color="primary"
               spinner-size="82px"
-              width="22vw"
-              height="50vh"
+              width="100%"
             >
               <q-img
                 src="~assets/Graph 1.png"
